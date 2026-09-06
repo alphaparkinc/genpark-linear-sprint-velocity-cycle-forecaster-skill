@@ -1,0 +1,36 @@
+{
+  "name": "genpark-linear-sprint-velocity-cycle-forecaster-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Agile sprint backlog velocity calculator and scope creep predictor estimating milestone completion confidence intervals.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "service",
+  "tags": [
+    "linear",
+    "sprint-velocity",
+    "agile-metrics",
+    "issue-tracker",
+    "project-management"
+  ],
+  "inputs": {
+    "cycle_name": {
+      "type": "string"
+    },
+    "planned_story_points": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "forecast_id": {
+      "type": "string"
+    },
+    "average_historical_velocity": {
+      "type": "number"
+    },
+    "completion_probability_pct": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
